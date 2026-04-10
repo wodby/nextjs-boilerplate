@@ -22,6 +22,6 @@ jobs:
           key: 'npm-{{ hash "package-lock.json" }}-v1'
           path: ~/.npm
 
-      - run: wodby ci build nextjs
+      - run: wodby ci build
       - run: wodby ci release
       - run: wodby ci deploy
